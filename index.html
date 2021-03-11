@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="content">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Batu Kertas Gunting</title>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1><span class="h1-kapital">P</span>ermainan <span class="h1-kapital">B</span>atu <span class="h1-kapital">K</span>ertas <span class="h1-kapital">G</span>unting <span class="h1-kapital">.</span></h1>
+            </header>
+        
+            <main>
+                <!-- game score -->
+                <div class="game-score">
+                    <h2>Player: <span id="playerScore">0</span></h2>
+                    <h2>Computer: <span id="enemyScore">0</span></h2>
+                </div>
+        
+                <!-- game container -->
+                <div class="game-container">
+                    <h2>Round: <span id="round">1</span></h2>
+                    <button id="batu" onclick="handleSign(0)"><img src="./image/rock.svg" alt="rock"></button>
+                    <button id="kertas" onclick="handleSign(1)"><img src="./image/rock.svg" alt="paper"></button>
+                    <button id="gunting" onclick="handleSign(2)"><img src="./image/rock.svg" alt="scissor"></button>
+                </div>
+                <p>Klik salah satu gambar untuk memilih</p>
+            </main>
+        
+            <footer>
+        
+            </footer>
+        
+            <script type="text/javascript" src="./script.js"></script>
+        </body>
+    </div>
+</html>
