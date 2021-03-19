@@ -5,31 +5,90 @@
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Allerta', sans-serif;
+    background-color: lightcyan;
 }
 
 .content {
     max-width: 800px;
-    margin: 10px auto;
+    margin: 50px auto;
 }
 
+/* header section */
 header {
-    background-color: rgb(187, 247, 255);
+    background-color: #282846;
+    color: #fed049;
+    text-shadow: 0 2px 2px black;
     width: 100%;
     padding: 0.3em;
-}
-
-h1 {
     text-align: center;
-    /* color: white; */
+    border-radius: 5px;
+    z-index: 3;
+    position: relative;
 }
 
-h2 {
-    font-size: 20px;
+/* main section */
+main {
+    position: relative;
+    top: -10px;
+    background-color: #007580;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    
 }
 
-.h1-kapital {
-    color: crimson;
-    font-weight: 900;
-    font-size: 30px;
+main .game-score {
+    display: flex;
+    margin: 0 20px;
+}
+
+main .game-score h2 {
+    flex: 1;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+main .game-score h2:last-of-type {
+    text-align: end;
+}
+
+main .game-container {
+    text-align: center;
+    text-shadow: 0 2px 2px black;
+}
+
+main .game-container .game-container-button {
+    display: flex;
+}
+
+main .game-container .game-container-button button {
+    flex: 1;
+    margin: 16px;
+    height: 200px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-shadow: 3px 3px black;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+main .game-container .game-container-button button:hover {
+    background-color: #fed049;
+}
+
+main button img {
+    width: 45%;
+}
+
+main p {
+    text-align: center;
+}
+
+footer {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 15px;
 }
